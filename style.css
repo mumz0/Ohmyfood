@@ -43,11 +43,58 @@ body {
 .headings .about p {
   padding-inline: 3rem;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .headings .about .home-btn {
   margin: auto;
   margin-bottom: 2rem;
+}
+
+.tutorial {
+  display: flex;
+  flex-direction: column;
+}
+.tutorial h2 {
+  padding: 2rem 0 0 2rem;
+}
+.tutorial .operations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-inline: 2rem;
+  counter-reset: compteListe;
+}
+.tutorial .operations .step {
+  counter-increment: compteListe 1;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0px 3px 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  height: 4.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.tutorial .operations .step span {
+  font-weight: 600;
+}
+.tutorial .operations .step::before {
+  content: counter(compteListe) " ";
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 1.25rem;
+}
+.tutorial .operations .step .fa-solid {
+  color: gray;
+  line-height: 4.3rem;
+  padding-right: 1rem;
 }
 
 .btn, .headings .about .home-btn {

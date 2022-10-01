@@ -1,43 +1,103 @@
-.header{
+.header {
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     position: relative;
     z-index: 1000;
 }
-.headings{
-    display:flex;
+
+.headings {
+    display: flex;
     flex-direction: column;
     text-align: center;
-    
 
-    .localisation{
-        display:flex;
+
+    .localisation {
+        display: flex;
         flex-direction: row;
         background-color: rgb(225, 225, 225);
         justify-content: center;
 
-        .fa-solid{
+        .fa-solid {
             margin-top: 1rem;
             padding-right: 1rem;
         }
     }
-    .about{
-        background-color: rgb(240, 240, 240);
-        
 
-        h1{
+    .about {
+        background-color: $lightgray;
+
+
+        h1 {
             padding-inline: 3rem;
-            font-size: 24px;  
+            font-size: 24px;
         }
-        p{
+
+        p {
             padding-inline: 3rem;
             font-size: 18px;
-            font-weight: lighter;    
+            font-weight: 300;
         }
-        .home-btn{
+
+        .home-btn {
             @extend .btn;
             margin: auto;
             margin-bottom: 2rem;
-            
+
+        }
+    }
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        padding: 2rem 0 0 2rem;
+    }
+
+    .operations {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-inline: 2rem;
+        counter-reset: compteListe;
+        
+
+        .step {
+            counter-increment: compteListe 1;
+            display: flex;
+            flex-direction: row;
+            background-color: $lightgray;
+            box-shadow: 0px 3px 0.5rem rgb(0 0 0 / 25%);
+            border-radius: 25px;
+            height: 4.5rem;
+            justify-content: center;
+            align-items: center;
+
+            span{
+                font-weight: 600;
+            }
+
+            &::before {
+                content: counter(compteListe) " ";
+                background: $primary-color;
+                height: 1.5rem;
+                width: 1.5rem;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                position: absolute;
+                left: 1.25rem;
+
+            }
+
+            .fa-solid {
+                color: gray;
+                line-height: 4.3rem;
+                padding-right: 1rem;
+
+            }
         }
     }
 }
