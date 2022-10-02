@@ -1,6 +1,11 @@
 @import 'utils/variables.scss';
+@import 'utils/mixins.scss';
 
 @import 'base/base.scss';
 @import 'layouts/header.scss';
-@import 'pages/homepage.scss';
+@import 'layouts/headings.scss';
+@import 'layouts/tutorial.scss';
+@import 'layouts/restaurants.scss';
 @import 'components/button.scss';
+@import 'components/card.scss';
+

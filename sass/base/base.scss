@@ -1,3 +1,21 @@
 body{
     font-family: 'Roboto', sans-serif;
   }
+  
+  h2{
+    padding: 2rem 0 0 1.5rem;
+  }
+
+  h3{
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: $size - 8;    
+  }
+
+  .byline{
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+  }

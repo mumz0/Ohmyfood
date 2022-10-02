@@ -1,0 +1,26 @@
+.cards-lst{
+    padding-inline: 1.5rem;
+}
+
+.card{
+    background-color: white;
+    border-radius: $radius-corner;
+    box-shadow: $shadow;
+
+    &__image{
+        height:10rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: $radius-corner $radius-corner 0 0;
+    }
+    .card-details{
+        display: flex;
+        flex-direction: row;
+    }
+    .fa-regular{
+        line-height: 3rem;
+        position: absolute;
+        right: 45px;
+        font-size: $size;
+    }
+}
