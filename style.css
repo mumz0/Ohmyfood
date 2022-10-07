@@ -118,7 +118,34 @@ h3 {
 .restaurants .cards-lst {
   display: flex;
   flex-direction: column;
+  padding-bottom: 4rem;
   gap: 1rem;
+}
+
+.footer {
+  background-color: rgb(74, 73, 73);
+  color: white;
+}
+.footer ul {
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+.footer li {
+  padding-bottom: 0.5rem;
+  list-style: none;
+}
+.footer li i {
+  padding-right: 5px;
+}
+
+h4 {
+  margin-block-start: 0;
+  margin: 0;
+  padding: 1.5rem 0 0 1.5rem;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .btn, .headings .about .home-btn {

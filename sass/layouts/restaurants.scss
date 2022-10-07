@@ -1,12 +1,14 @@
-.restaurants{
+.restaurants {
     background-color: $lightgray;
 
-    .cards-lst{
+    .cards-lst {
         display: flex;
         flex-direction: column;
+        padding-bottom: 4rem;
         gap: 1rem;
+    }
 }
-    }
-    .card{
-        @extend .card;
-    }
+
+.card {
+    @extend .card;
+}
