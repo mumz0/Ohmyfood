@@ -8,6 +8,22 @@
         height: 1.8rem;
     }
 }
+
+.link-back{
+    display: flex;
+    text-align: center;
+    padding: 25px;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+
+    .fas{
+        font-size: 22px;
+        color: black;
+    }
+}
+
+
 .header__shadow{
     box-shadow: $shadow;
     position: relative;

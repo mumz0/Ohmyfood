@@ -24,3 +24,21 @@
         font-size: $size;
     }
 }
+
+.category-title{
+    padding: 2rem 0 0 1.5rem;
+  }
+
+  .card-title{
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: $size - 8;    
+  }
+
+  .byline{
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+  }

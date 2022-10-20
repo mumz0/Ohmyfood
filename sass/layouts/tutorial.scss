@@ -19,9 +19,10 @@
             box-shadow: $shadow;
             border-radius: 25px;
             height: 4.5rem;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
-
+            padding-left:40px;
+            
             span{
                 font-weight: 600;
             }
