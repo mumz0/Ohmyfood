@@ -1,3 +1,16 @@
+.fa-solid {
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.fa-solid:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -102,10 +115,11 @@ body {
   position: absolute;
   left: 1.25rem;
 }
-.tutorial .operations .step .fa-solid {
+.tutorial .operations .step i {
   color: gray;
   line-height: 4.3rem;
   padding-right: 1rem;
+  opacity: 1;
 }
 
 .restaurants {
@@ -133,6 +147,8 @@ body {
 }
 .footer li i, .footer-restaurant-page li i {
   padding-right: 5px;
+  opacity: 1;
+  color: white;
 }
 
 .footer-restaurant-page {
@@ -185,7 +201,7 @@ h4 {
   padding-top: 2rem;
 }
 
-.fa-regular {
+.fa-heart {
   line-height: 6rem;
   position: absolute;
   right: 30px;
@@ -212,6 +228,10 @@ h4 {
   margin-bottom: 5rem;
 }
 
+.link-restaurant {
+  text-decoration: none;
+}
+
 .btn, .headings .about .home-btn, .order-btn {
   border: 0;
   height: 50px;
@@ -221,6 +241,10 @@ h4 {
   color: white;
   text-align: center;
   font-size: 16px;
+}
+.btn:hover, .headings .about .home-btn:hover, .order-btn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
 }
 
 .cards-lst {
@@ -232,6 +256,10 @@ h4 {
   border-radius: 15px;
   box-shadow: 0px 3px 0.5rem rgba(0, 0, 0, 0.25);
 }
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 1rem rgba(0, 0, 0, 0.5);
+}
 .card__image {
   height: 10rem;
   width: 100%;
@@ -241,8 +269,9 @@ h4 {
 .card .card-details {
   display: flex;
   flex-direction: row;
+  color: black;
 }
-.card .fa-regular {
+.card .fa-heart {
   line-height: 3rem;
   position: absolute;
   right: 45px;
@@ -253,14 +282,16 @@ h4 {
   padding: 2rem 0 0 1.5rem;
 }
 
-.card-title {
+.subtiles {
+  color: black;
+}
+.subtiles .card-title {
   margin: 0;
   padding-left: 1rem;
   padding-top: 0.5rem;
   font-size: 16px;
 }
-
-.byline {
+.subtiles .byline {
   margin: 0;
   padding-left: 1rem;
   padding-top: 0.2rem;
@@ -275,6 +306,9 @@ h4 {
   padding: 10px 20px 10px 20px;
   justify-content: space-between;
   box-shadow: 0px 3px 0.5rem rgba(0, 0, 0, 0.25);
+}
+.dish-card:hover {
+  transform: scale(1.01);
 }
 .dish-card__title {
   margin: 0;
